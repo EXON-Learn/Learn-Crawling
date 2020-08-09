@@ -1,5 +1,3 @@
-# 깃허브 유저 레포 크롤러
-```js
 import requests
 from bs4 import BeautifulSoup
 
@@ -14,4 +12,3 @@ soup = BeautifulSoup(source, "html.parser")
 for i in range(repo):
     repo_name = soup.select("#user-repositories-list > ul > li:nth-child(" + str(i+1) + ") > div.col-10.col-lg-9.d-inline-block > div.d-inline-block.mb-1 > h3 > a")[0].string.strip()
     print(repo_name)
-```
