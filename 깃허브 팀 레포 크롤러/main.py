@@ -11,4 +11,5 @@ soup = BeautifulSoup(source, "html.parser")
 
 for i in range(repo):
     repo_name = soup.select("#org-repositories > div.col-12.col-md-8.d-md-inline-block > div > ul > div:nth-child(" + str(i+1) + ") > div.flex-justify-between.d-flex > div.flex-auto > h3 > a")[0].string.strip()
-    print(repo_name)
+    repo_info = soup.select("#user-repositories-list > ul > li:nth-child(" + str(i+1) + ") > div.col-10.col-lg-9.d-inline-block > div:nth-child(2) > p")[0].string.strip()
+    print(repo_info)
