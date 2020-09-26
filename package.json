@@ -1,0 +1,23 @@
+{
+  "name": "learn-crawling",
+  "version": "1.0.0",
+  "description": "크롤링 배우기",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EXON-Learn/Learn-Crawling.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EXON-Learn/Learn-Crawling/issues"
+  },
+  "homepage": "https://github.com/EXON-Learn/Learn-Crawling#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
